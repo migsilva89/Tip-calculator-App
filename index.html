@@ -15,59 +15,88 @@
       </header>
 
       <div class="board-container">
+
         <!-- LEFT -->
         <div class="left-container">
 
-          <div>
+          <div class="bill-container">
             <h4 class="bill-title">Bill</h4>
             <div class="bill-content">
               <img class="dolar-img" src="./images/icon-dollar.svg" alt="">
-              <input class="bill-field" onchange="calcula()" type="number" id="billvalue" value="0">
+              <input class="bill-field" onchange="calcula()" type="number" name="bill-field" id="billvalue" value="0">
             </div>
           </div>
 
           <div class="tip-container">
-              <label for="SelectTip">Select Tip%</label>
+              <h3 class="tip-title">Select Tip %</h3>
               <div class="btns-container">
-                <button> 5%</button>
-                <button>10%</button>
-                <button>15%</button>
-                <button>25%</button>
-                <button>50%</button>
-                <input onchange="calcula()" class="range" id="custom" name="custom" type="number" placeholder="Custom">
+                <div class="btns">
+                  <button class="btn5" onclick="btnPressed(5)">5%</button>
+                </div>
+                <div class="btns">
+                  <button onclick="btnPressed(10)" value="10">10%</button>
+                </div>
+                <div class="btns">
+                  <button onclick="btnPressed(15)" value="15">15%</button>
+                </div>
+                <div class="btns">
+                  <button onclick="btnPressed(25)" value="25">25%</button>
+                </div>
+                <div class="btns">
+                  <button onclick="btnPressed(50)" value="50">50%</button>
+                </div>
+                <div class="btns">
+                  <input onchange="calcula()" class="btn-inp" id="custom" name="custom" type="number" placeholder="Custom">
+                </div>
                 <div class="hide">
-                  <input name="radio" type="radio" value="5" >                
-                  <input name="radio" type="radio" value="10">                          
-                  <input name="radio" type="radio" value="15">                             
-                  <input name="radio" type="radio" value="25">                
-                  <input name="radio" type="radio" value="50" checked>
+                  <input type="hidden" id="selected-tip" value="5">
                 </div>
             </div>  
           </div>
 
-          <div>
-            <label for="numberofpeople">Number Of People::</label>
-            <input id="peoplenumber" type="number" min="0" max="10">
+          <div class="number-people-container">
+            <h4 class="bill-title">Number Of People</h4>
+            <div class="bill-content">
+              <img class="avatar-img" src="./images/icon-person.svg" alt="">
+              <input class="bill-field" name="bill-field" id="peoplenumber" type="number" value="1" min="0" max="10">
+            </div>
           </div>
 
         </div>
-
-
 
         <!-- RIGHT -->
         <div class="right-container">
-          <div>
-            <div id="tipperperson">Tip Amount:</div>
-            <div>150aerios</div>
-          </div>
-          <div>
-            <div id="totalperperson">Total:</div>
-            <div>200aerios</div>
-          </div>
-          <div>
-            <button>Reset</button>
+          <div class="right-container-content">
+            <div class="right-pad">
+
+              <div class="flex">
+                <div>
+                  <div class="tip-total" id="tipperperson">Tip Amount</div> 
+                  <p>/ person</p>
+                </div>
+                <div>
+                  <div id="tip-per-person" class="value-tip">$0.00</div>
+                </div>
+              </div>
+              
+              <div class="flex total">
+                <div>
+                  <div  class="tip-total" >Total</div>
+                  <p>/ person</p>
+                </div>
+                <div>
+                  <div id="total-per-person" class="value-tip">$0.00</div>
+                </div>
+              </div>
+
+              <div class="reset-btn">
+                <button class="reset-content">Reset</button>
+              </div>
+
+            </div>
           </div>
         </div>
+
       </div>
 
     </div>
