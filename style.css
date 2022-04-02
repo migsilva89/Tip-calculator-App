@@ -1,8 +1,124 @@
-.flex {
-    display:flex;
-    gap:30px;
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
+
+:root {
+--darkCyan:  hsl(183, 100%, 15%);
+--darkGrayish:hsl(186, 14%, 43%);
+--graysihCyan:hsl(184, 14%, 56%);
+--lightGrayishCyan:hsl(185, 41%, 84%);
+--veryLightGrayishCyan:hsl(180, 37%, 93%);
+--white:hsl(0, 0%, 100%);
 }
 
-.t{
-    padding:10px;
+html {
+    font-family: 'Space Mono', monospace;
+    background-color: var(--lightGrayishCyan);
 }
+
+.main-container {
+    display: flex;
+    justify-content: center;
+}
+
+.main-width {
+    width: 920px;
+}
+
+.header {
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 0.5;
+    font-weight: lighter;
+    margin-top:140px;
+    color:var(--darkCyan);
+}
+
+.main-title {
+    letter-spacing: 10px;
+    font-weight: lighter;
+    font-size:30px;
+}
+
+.board-container {
+    max-width: 920px;
+    display: grid;
+    grid-template-columns: 50% 50% ;
+    margin-top:80px; 
+    justify-content: center;
+    background-color:white;
+}
+
+.left-container {
+    border-right: 1px solid;
+    display: grid;
+    grid-template-rows: auto auto auto;
+    padding:45px;
+    height:450px;
+}
+
+.bill-title {
+    margin-bottom:8px;
+    margin-top:0px;
+    color:var(--darkCyan);
+}
+
+.bill-content {
+    display: flex;
+    padding: 10px;
+    background-color: var(--veryLightGrayishCyan);
+    border-radius:7px;
+}
+
+input[type=number]{
+    border:none;
+    text-align:right;
+    background-color: var(--veryLightGrayishCyan);
+    color:var(--darkCyan);
+    font-size:26px;
+    font-family: 'Space Mono', monospace;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input:focus, textarea:focus, select:focus{
+    outline: none;
+}
+
+.bill-field {
+    width:95%; 
+}
+
+.dolar-img {
+    padding:8px;
+}
+
+.tip-container {
+    padding:12px 0 12px 0;
+}
+
+.btns-container{
+    display:grid;
+    grid-template-columns: 60px 60px 60px;
+    grid-template-rows: 25px 25px;
+    gap:10px;
+    padding-top:12px;
+    justify-content: space-between;
+}
+
+.hide {
+    display: none;
+}
+
+.right-container{
+    padding:45px;
+}
+
+
+
+
+
+
+

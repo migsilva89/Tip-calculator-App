@@ -19,5 +19,6 @@ function calcula() {
     var tipPerPerson = totalTip / numberOfPeople.value
     var billPerPerson = billValue.value / numberOfPeople.value
     var totalPerPerson = tipPerPerson + billPerPerson
-    // console.log(totalPerPerson)
+    console.log(totalPerPerson)
+    console.log(tipPerPerson)
 }
