@@ -29,20 +29,19 @@
           <div class="tip-container">
               <label for="SelectTip">Select Tip%</label>
               <div class="btns-container">
-                <!-- <button> 5%</button>
+                <button> 5%</button>
                 <button>10%</button>
                 <button>15%</button>
                 <button>25%</button>
                 <button>50%</button>
-                <button>Custom</button> -->
-                <!-- <div class=""> -->
-                  <input name="radio" type="radio" value="5" checked>                
+                <input onchange="calcula()" class="range" id="custom" name="custom" type="number" placeholder="Custom">
+                <div class="hide">
+                  <input name="radio" type="radio" value="5" >                
                   <input name="radio" type="radio" value="10">                          
                   <input name="radio" type="radio" value="15">                             
                   <input name="radio" type="radio" value="25">                
-                  <input name="radio" type="radio" value="50">
-                  <input onchange="calcula()" class="range" id="range" name="custom" value="0" type="range" min="0" max="100">
-                <!-- </div> -->
+                  <input name="radio" type="radio" value="50" checked>
+                </div>
             </div>  
           </div>
 

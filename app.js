@@ -1,6 +1,6 @@
 function calcula() {
     billValue = document.getElementById("billvalue")
-    customValue = document.getElementById("range")
+    customValue = document.getElementById("custom")
     var tipValue = null
 
     if (customValue.value > 0){
@@ -19,6 +19,8 @@ function calcula() {
     var tipPerPerson = totalTip / numberOfPeople.value
     var billPerPerson = billValue.value / numberOfPeople.value
     var totalPerPerson = tipPerPerson + billPerPerson
-    console.log(totalPerPerson)
-    console.log(tipPerPerson)
+    // console.log(totalPerPerson)
+    // console.log(tipPerPerson)
+
+    
 }
