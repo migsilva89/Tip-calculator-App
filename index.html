@@ -31,19 +31,19 @@
               <h3 class="tip-title">Select Tip %</h3>
               <div class="btns-container">
                 <div class="btns">
-                  <button class="btn5" onclick="btnPressed(5)">5%</button>
+                  <button class="btn5 pressed" batata="batata" id="btn5" onclick="btnPressed(5)">5%</button>
                 </div>
                 <div class="btns">
-                  <button onclick="btnPressed(10)" value="10">10%</button>
+                  <button onclick="btnPressed(10)" batata="batata" id="btn10">10%</button>
                 </div>
                 <div class="btns">
-                  <button onclick="btnPressed(15)" value="15">15%</button>
+                  <button onclick="btnPressed(15)" batata="batata" id="btn15">15%</button>
                 </div>
                 <div class="btns">
-                  <button onclick="btnPressed(25)" value="25">25%</button>
+                  <button onclick="btnPressed(25)" batata="batata" id="btn25">25%</button>
                 </div>
                 <div class="btns">
-                  <button onclick="btnPressed(50)" value="50">50%</button>
+                  <button onclick="btnPressed(50)" batata="batata" id="btn50">50%</button>
                 </div>
                 <div class="btns">
                   <input onchange="calcula()" class="btn-inp" id="custom" name="custom" type="number" placeholder="Custom">
@@ -89,8 +89,10 @@
                 </div>
               </div>
 
-              <div class="reset-btn">
-                <button class="reset-content">Reset</button>
+              <div class="">
+                <div class="reset-btn">
+                  <button class="reset-content">Reset</button>
+                </div>
               </div>
 
             </div>

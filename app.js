@@ -1,8 +1,19 @@
 
-
 function btnPressed(tipValue) {
     document.getElementById("selected-tip").value = tipValue
-    // console.log(selectedTip)
+    const selectedBtn = document.getElementById("btn" + tipValue)  
+    const batata = document.querySelectorAll("[batata=batata]")
+
+    batata.forEach(function(value) {
+        value.classList.remove("pressed")
+    })
+    
+
+
+
+    selectedBtn.classList.add("pressed")
+
+
     calcula()
 }
 

@@ -177,7 +177,6 @@ input[name=custom]{
     border-radius:15px;
     height:100%;
     background-color: var(--darkCyan);
-    position: relative;
 }
 
 .right-pad{
@@ -192,16 +191,16 @@ input[name=custom]{
 }
 
 .reset-btn {
-    position: absolute;
+    margin-top:140px;
     bottom:50px;
-  }
+}
 
 .reset-content {
     padding-left: 130px;
     padding-right: 130px;
     background-color: var(--darkCyan2);
     text-transform: uppercase;
-    color:var(--darkCyan)
+    color:var(--darkCyan);
 }
 
 .value-tip {
