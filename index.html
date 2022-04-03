@@ -58,7 +58,7 @@
             <h4 class="bill-title">Number Of People</h4>
             <div class="bill-content">
               <img class="avatar-img" src="./images/icon-person.svg" alt="">
-              <input class="bill-field" name="bill-field" id="peoplenumber" type="number" value="1" min="0" max="10">
+              <input onchange="calcula()" step="1" class="bill-field" name="bill-field" id="peoplenumber" type="number" value="1" min="0" max="10">
             </div>
           </div>
 
@@ -91,7 +91,7 @@
 
               <div class="">
                 <div class="reset-btn">
-                  <button class="reset-content">Reset</button>
+                  <button id="reset-btn" onclick="reset()"class="reset-content">Reset</button>
                 </div>
               </div>
 

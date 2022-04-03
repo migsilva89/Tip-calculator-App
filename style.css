@@ -203,6 +203,13 @@ input[name=custom]{
     color:var(--darkCyan);
 }
 
+.reset-content:hover{
+    /* background-color: var(--darkCyan2); */
+    box-shadow: inset 0px 0px 10px rgba(0,0,0,0.5);
+    background-color:var(--graysihCyan);
+}
+
+
 .value-tip {
     color: var(--darkCyan2);
     font-size:45px
@@ -222,7 +229,7 @@ p{
     margin-top:45px;
 }
 
-.btn-inp:hover {
+.btn-inp1:hover {
     background-color:black;
     background-color:var(--darkCyan2);
     color:white;

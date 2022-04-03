@@ -8,11 +8,7 @@ function btnPressed(tipValue) {
         value.classList.remove("pressed")
     })
     
-
-
-
     selectedBtn.classList.add("pressed")
-
 
     calcula()
 }
@@ -23,6 +19,7 @@ function calcula() {
     let tipValue = document.getElementById("selected-tip").value
     let numerOfPeople = document.getElementById("peoplenumber").value
     
+
     if (customValue > 0){
         tipValue = customValue
     } 
@@ -36,6 +33,10 @@ function calcula() {
     result1 = document.getElementById("tip-per-person")
     result2 = document.getElementById("total-per-person")
 
-    result1.innerText = `$ ${tipPerPerson}`
-    result2.innerText = `$ ${totaPerPerson}`
+    result1.innerText = `$ ${tipPerPerson.toFixed(2)}`
+    result2.innerText = `$ ${totaPerPerson.toFixed(2)}`
+}
+
+function reset() {
+    window.location.reload();
 }
