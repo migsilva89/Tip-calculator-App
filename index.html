@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
   <link rel="stylesheet" href="style.css">
+  <title>TipCalculator</title>
 </head>
 <body>
   <main class="main-container">
@@ -31,19 +32,19 @@
               <h3 class="tip-title">Select Tip %</h3>
               <div class="btns-container">
                 <div class="btns">
-                  <button class="btn5 pressed" batata="batata" id="btn5" onclick="btnPressed(5)">5%</button>
+                  <button class="btn5 pressed" name="btns" id="btn5" onclick="btnPressed(5)">5%</button>
                 </div>
                 <div class="btns">
-                  <button onclick="btnPressed(10)" batata="batata" id="btn10">10%</button>
+                  <button onclick="btnPressed(10)" name="btns" id="btn10">10%</button>
                 </div>
                 <div class="btns">
-                  <button onclick="btnPressed(15)" batata="batata" id="btn15">15%</button>
+                  <button onclick="btnPressed(15)" name="btns" id="btn15">15%</button>
                 </div>
                 <div class="btns">
-                  <button onclick="btnPressed(25)" batata="batata" id="btn25">25%</button>
+                  <button onclick="btnPressed(25)" name="btns" id="btn25">25%</button>
                 </div>
                 <div class="btns">
-                  <button onclick="btnPressed(50)" batata="batata" id="btn50">50%</button>
+                  <button onclick="btnPressed(50)" name="btns" id="btn50">50%</button>
                 </div>
                 <div class="btns">
                   <input onchange="calcula()" class="btn-inp" id="custom" name="custom" type="number" placeholder="Custom">
@@ -91,7 +92,7 @@
 
               <div class="">
                 <div class="reset-btn">
-                  <button id="reset-btn" onclick="reset()"class="reset-content">Reset</button>
+                  <button id="reset-btn" onclick="reset()" class="reset-content">Reset</button>
                 </div>
               </div>
 

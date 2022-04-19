@@ -2,9 +2,9 @@
 function btnPressed(tipValue) {
     document.getElementById("selected-tip").value = tipValue
     const selectedBtn = document.getElementById("btn" + tipValue)  
-    const batata = document.querySelectorAll("[batata=batata]")
+    const btns = document.querySelectorAll("[name=btns]")
 
-    batata.forEach(function(value) {
+    btns.forEach(function(value) {
         value.classList.remove("pressed")
     })
     
