@@ -20,10 +20,6 @@ html {
     justify-content: center;
 }
 
-.main-width {
-    width: 920px;
-}
-
 .header {
     text-align: center;
     text-transform: uppercase;
@@ -71,6 +67,9 @@ html {
 
 .bill-container {
     margin-bottom:0px;
+    width: auto;
+    display:grid;
+    grid-template-rows: auto auto;
 }
 
 input[name=bill-field]{
@@ -90,10 +89,6 @@ input::-webkit-inner-spin-button {
 
 input:focus, textarea:focus, select:focus{
     outline: none;
-}
-
-.bill-field {
-    width:95%; 
 }
 
 .dolar-img {
@@ -123,6 +118,7 @@ input:focus, textarea:focus, select:focus{
 
 .btns {
     text-align: center;
+    width: 100%;
 }
 
 .btn5 {
@@ -161,10 +157,10 @@ input[name=custom]{
     border-radius:5px;
 }
 
-.number-people-container {
-    margin-top:30px;
+.flex {
+    display: flex;
+    max-width: 920px;
 }
-
 .hide {
     display: none;
 }
@@ -204,7 +200,6 @@ input[name=custom]{
 }
 
 .reset-content:hover{
-    /* background-color: var(--darkCyan2); */
     box-shadow: inset 0px 0px 10px rgba(0,0,0,0.5);
     background-color:var(--graysihCyan);
 }
@@ -235,3 +230,23 @@ p{
     color:white;
 }
 
+
+@media only screen and (max-width: 960px) {
+    .board-container {
+        max-width: 920px;
+        display: grid;
+        grid-template-columns: auto ;
+        margin-top:80px; 
+        justify-content: center;
+        background-color:white;
+        border-radius:20px;
+        width: 100%;
+    }
+
+    /* .btns-container{
+        display:grid;
+        grid-template-columns: auto auto ;
+        grid-template-rows: auto auto auto;
+        padding-top:12px;
+    } */
+  }

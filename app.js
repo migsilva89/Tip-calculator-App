@@ -19,7 +19,6 @@ function calcula() {
     let tipValue = document.getElementById("selected-tip").value
     let numerOfPeople = document.getElementById("peoplenumber").value
     
-
     if (customValue > 0){
         tipValue = customValue
     } 
