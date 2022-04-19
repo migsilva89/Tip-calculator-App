@@ -63,6 +63,7 @@ html {
     padding: 4px;
     background-color: var(--veryLightGrayishCyan);
     border-radius:5px;
+    justify-content: space-between;
 }
 
 .bill-container {
@@ -151,16 +152,12 @@ input[name=custom]{
     text-align:center;
     font-size:20px;
     font-family: 'Space Mono', monospace;
-    width: 95px;
+    max-width: 95px;
     background-color: var(--veryLightGrayishCyan);
     padding:10px 10px 10px 10px;
     border-radius:5px;
 }
 
-.flex {
-    display: flex;
-    max-width: 920px;
-}
 .hide {
     display: none;
 }
@@ -231,17 +228,24 @@ p{
 }
 
 
+
 @media only screen and (max-width: 960px) {
     .board-container {
         max-width: 920px;
         display: grid;
         grid-template-columns: auto ;
-        margin-top:80px; 
-        justify-content: center;
+        /* margin-top:80px;  */
         background-color:white;
         border-radius:20px;
-        width: 100%;
+        padding:20px;
     }
+
+    .main-width {
+        width:100%;
+        margin-left:1px;
+        margin-right:1px;
+    }
+    
 
     /* .btns-container{
         display:grid;
